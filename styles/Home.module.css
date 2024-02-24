@@ -1,0 +1,65 @@
+
+  .box {
+    text-align: center;
+    background-color:darkslategrey;
+    border: 2px solid white;
+    animation: 2s hideCard linear;
+  }
+  .container > h1{
+    text-align: center;
+    
+  }
+
+
+  .app {
+   margin: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    display: grid;
+    animation: 2s hideCard linear;
+    margin-top: 0PX;
+  }
+  
+.box > img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  opacity: 0;
+  animation: 2s hideImage linear;
+  
+}
+.active{
+  transform: rotateY(0)
+  
+}
+.isActive{
+  transform: rotateY(0)
+  
+}
+ .active img{
+  opacity: 1;
+}
+.unmatch{
+  background-color: rgb(240, 28, 28);
+  border-radius: 5px;
+  animation: 2s hideCard linear;
+}
+
+
+@keyframes hideCard {
+  0%, 70%{
+    transform: rotateX(0deg);
+  }100%{
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes hideImage {
+  0%, 84%{
+    opacity: 1;
+  }85%{
+    opacity: 0;
+  }
+}
